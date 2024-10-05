@@ -7,7 +7,7 @@ export default function Country(){
         <div>
                <Nav/>
         
-            <h1 className="text-4xl flex justify-center text-white ease duration-300 hover:text-blue-500 cursor-pointer font-bold py-2 ">Countries Details</h1>
+            <h1 className="text-4xl flex justify-center text-white ease duration-300 hover:text-blue-400 cursor-pointer font-bold py-2 ">Countries Details</h1>
             <ul className=" list-none flex justify-center flex-col items-center gap-16 py-6 text-white text-center "> 
                 <li className="text-lg py-2 bg-slate-500 rounded-lg w-28 duration-100 hover:ease-linear hover:scale-110 ">
                   <Link className="p-4 py-1" href={"/country/pakistan"}> Pakistan </Link></li>
