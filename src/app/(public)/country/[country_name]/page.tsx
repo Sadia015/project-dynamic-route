@@ -2,8 +2,9 @@
 import React from 'react';
 import Link from "next/link";
 
-export default function CountryName({params}:any) {
- 
+  export default function CountryName({ params }: { params: { country_name: string } }) {
+    // ...
+  
   const Countries: { 
     name: string;
     capital: string;
@@ -42,7 +43,7 @@ export default function CountryName({params}:any) {
       return Countries.find(country=>country.name.toLowerCase() == country_url.toLowerCase())
     }
 
-    let result =FindCountry(params.country_name)
+    const result =FindCountry(params.country_name)
   if (result) return (
     <>
     <div className="w-max h-max bg-gray-300 shadow-2xl shadow-red-400 py-8 px-14 m-auto mt-60 rounded-3xl font-bold">
