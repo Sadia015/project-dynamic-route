@@ -38,9 +38,10 @@ export default function CountryName({params}:any) {
       },
     ]
     
-    function FindCountry(country_url: string) {
-    return Countries.find(country=>country.name || country_url)
+   function FindCountry(country_url: string) {
+      return Countries.find(country=>country.name.toLowerCase() == country_url.toLowerCase())
     }
+
     let result =FindCountry(params.country_name)
   if (result) return (
     <>
